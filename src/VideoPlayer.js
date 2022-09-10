@@ -8,6 +8,7 @@ class Video extends Component {
             <ReactPlayer
             playing = 'true'
             loop = 'true'
+            muted = 'true'
             className='react-player fixed-bottom'
             url= 'videos/deli_ad.mov'
             width='100%'
