@@ -3,16 +3,17 @@ import '@elastic/eui/dist/eui_theme_dark.css';
 
 import { EuiFlexGroup, EuiFlexItem, EuiSpacer, EuiPanel, EuiText } from '@elastic/eui';
 import { useState } from 'react';
+import App from '../../VideoPlayer'
 
  
 function Index(props) {
-  // const {name, setName} = useState('');
+
   return (
     <div>
     <EuiFlexGroup className="index">
       <EuiFlexItem>
         <EuiPanel paddingSize="xl">
-            Hi
+            <App />
         </EuiPanel>
       </EuiFlexItem>
 
@@ -23,7 +24,7 @@ function Index(props) {
                     Hello, {props.name}
                 </h1>
                 <p>
-                    How about having <strong>{props.product}</strong> this time? <br/>
+                    How about having <strong>{props.product}</strong> this time? <br/><br/>
                     Hold your device over a QR Code!
                 </p>
             </EuiText>
