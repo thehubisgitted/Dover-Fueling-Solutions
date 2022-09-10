@@ -3,22 +3,17 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <><EuiFlexGroup>
+      <EuiFlexItem>Content grid item</EuiFlexItem>
+      <EuiFlexItem>
+        <p>Another content grid item</p>
+        <EuiSpacer />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Note how both of these are the same width and height despite having
+          different content?
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      </EuiFlexItem>
+    </EuiFlexGroup></>
   );
 }
 
