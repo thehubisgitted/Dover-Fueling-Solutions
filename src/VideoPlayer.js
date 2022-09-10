@@ -1,5 +1,30 @@
-import React, {useEffect, useRef} from "react";
+import React, { Component } from 'react'
+import ReactPlayer from 'react-player'
+
+class Video extends Component {
+    render () {
+        return (
+        <div className='player-wrapper'>
+            <ReactPlayer
+            playing = 'true'
+            loop = 'true'
+            className='react-player fixed-bottom'
+            url= 'videos/deli_ad.mov'
+            width='100%'
+            height='100%'
+            controls = {true}
+
+            />
+        </div>
+        )
+    }
+}
+
+export default Video;
+/*import React, {useState, useEffect, useRef} from "react";
+import FilePlayer from "react-player/file";
 import "./App.css";
+import ReactPlayer from react-player;
 
 export default function App(){
     const videoEl =useRef(null);
@@ -33,4 +58,4 @@ export default function App(){
         </div>
 
     )
-}
+}*/
