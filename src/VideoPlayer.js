@@ -10,7 +10,7 @@ class Video extends Component {
             playing = 'true'
             loop = 'true'
             className='react-player fixed-bottom'
-            muted={true}
+            muted={false}
             url= {this.props.url}
             width='100%'
             height='100%'
