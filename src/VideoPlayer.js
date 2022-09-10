@@ -1,23 +1,21 @@
 import React, { Component } from 'react'
 import ReactPlayer from 'react-player'
 
-class Video extends Component {
-    render () {
+function Video (props){
+
         return (
         <div className='player-wrapper'>
             <ReactPlayer
             playing = 'true'
             loop = 'true'
             className='react-player fixed-bottom'
-            url= 'videos/deli_ad.mov'
+            url= {props.url}
             width='100%'
             height='100%'
             controls = {true}
-
             />
         </div>
         )
-    }
 }
 
 export default Video;
