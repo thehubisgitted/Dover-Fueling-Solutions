@@ -1,0 +1,17 @@
+.index-component {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.index-left {
+    width: 50%;
+    float: left;
+    background: #8977ad;
+}
+
+.index-right {
+    width: 50%;
+    float: right;
+    background: #ece6cc;
+}
