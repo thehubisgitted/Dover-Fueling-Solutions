@@ -3,10 +3,18 @@ import '@elastic/eui/dist/eui_theme_dark.css';
 
 import { EuiFlexGroup, EuiFlexItem, EuiSpacer, EuiPanel, EuiText } from '@elastic/eui';
 import { useState } from 'react';
-import Video from '../../VideoPlayer'
+import Video from '../../VideoPlayer';
 import QRCode from "react-qr-code";
+import users from "../../test/test";
  
+function getRandomUser(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min; //최댓값은 제외, 최솟값은 포함
+}
+
 function Index(props) {
+  const user = users[getRandomUser(0,5)]
 
   return (
     <div>
@@ -21,10 +29,10 @@ function Index(props) {
         <EuiPanel paddingSize="xl">
             <EuiText>
                 <h1>
-                    Hello, {props.name}
+                    Hello, {user.name}
                 </h1>
                 <p>
-                    How about having <strong>{props.product}</strong> this time? <br/><br/>
+                    How about having <strong>{user.video}</strong> this time? <br/><br/>
                     Hold your device over a QR Code!
                 </p>
             </EuiText>
