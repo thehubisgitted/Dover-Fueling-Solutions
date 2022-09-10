@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-doverreactapp-dev-154247-authRole",
+      "UnauthRoleArn": "arn:aws:iam::740567540562:role/amplify-doverreactapp-dev-154247-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::740567540562:role/amplify-doverreactapp-dev-154247-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-doverreactapp-dev-154247-deployment",
+      "UnauthRoleName": "amplify-doverreactapp-dev-154247-unauthRole",
+      "StackName": "amplify-doverreactapp-dev-154247",
+      "StackId": "arn:aws:cloudformation:us-east-2:740567540562:stack/amplify-doverreactapp-dev-154247/2208f760-3149-11ed-85f8-06bcec7a4a1c",
+      "AmplifyAppId": "d22aurq1uz8rkk"
+    }
+  }
+}
