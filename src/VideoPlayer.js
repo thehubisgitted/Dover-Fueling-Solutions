@@ -1,21 +1,25 @@
+import { render } from '@testing-library/react';
 import React, { Component } from 'react'
 import ReactPlayer from 'react-player'
 
-function Video (props){
-
-        return (
+class Video extends Component {
+    render () {
+        return(
         <div className='player-wrapper'>
             <ReactPlayer
             playing = 'true'
             loop = 'true'
             className='react-player fixed-bottom'
-            url= {props.url}
+            muted={true}
+            url= {this.props.url}
             width='100%'
             height='100%'
             controls = {true}
+
             />
         </div>
-        )
+        );
+    }
 }
 
 export default Video;
