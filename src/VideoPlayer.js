@@ -22,10 +22,8 @@ export default function App(){
                 <div>
                     <video
                     style={{ maxWidth: "100%", width: "800px", margin: "0 auto" }}
-                     playsInline
-                     loop
+                    loop
                     muted
-                    controls
                     alt="Promo Video"
                     //TODO: CREATE A FUNCTION THAT CHANGES THIS URL BASED ON A NUMBER MAYBE IMPORT A VARIABLE?
                     src="https://stream.mux.com/6fiGM5ChLz8T66ZZiuzk1KZuIKX8zJz00/medium.mp4"
