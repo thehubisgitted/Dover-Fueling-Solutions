@@ -14,9 +14,9 @@ function getRandomUser(min, max) {
 }
 
 function Index(props) {
-  const user = users[getRandomUser(0,5)]
+  const user = users[getRandomUser(0,5)];
 
-  const url = user.video=="deli" ? 'videos/deli_ad.mov':'videos/healthy_ad.mov';
+  const url = user.video==="deli" ? 'videos/deli_ad.mov':'videos/healthy_ad.mov';
 
   return (
     <div>
