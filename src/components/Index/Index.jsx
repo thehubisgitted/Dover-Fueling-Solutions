@@ -16,12 +16,14 @@ function getRandomUser(min, max) {
 function Index(props) {
   const user = users[getRandomUser(0,5)]
 
+  const url = user.video=="deli" ? 'videos/deli_ad.mov':'';
+
   return (
     <div>
     <EuiFlexGroup className="index">
       <EuiFlexItem>
         <EuiPanel paddingSize="xl">
-            <Video />
+            <Video url = {url}/>
         </EuiPanel>
       </EuiFlexItem>
 
