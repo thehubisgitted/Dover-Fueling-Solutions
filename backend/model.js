@@ -1,3 +1,4 @@
+// this file holds the schema for the data being added to the database
 const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
