@@ -13,6 +13,7 @@ function getRandomUser(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
+// This function is the main framework of the user interface, including the video ad, greeting, and qr code promotion
 function Index(props) {
   const user = users[getRandomUser(0,5)];
 
