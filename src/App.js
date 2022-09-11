@@ -5,6 +5,7 @@ import QRCode from "react-qr-code";
 
 import { EuiFlexGroup, EuiFlexItem, EuiSpacer } from '@elastic/eui';
 function App() {
+
   return (
     <><EuiFlexGroup>
       <EuiFlexItem>Content grid item</EuiFlexItem>
